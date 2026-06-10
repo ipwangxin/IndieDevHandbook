@@ -3,15 +3,15 @@ layout: home
 
 hero:
   name: 国内独立开发冷启动手册
-  text: 从点子、开发、上线到第一批用户
-  tagline: 一本慢慢写出来的免费实践笔记。少讲一点热血，多讲一点怎么把东西真的推到用户面前。
+  text: 从点子、AI 开发、上线到第一批用户
+  tagline: 一本慢慢写出来的免费实践笔记。少讲一点热血，多讲一点在 AI 和 vibe coding 时代，怎么把东西真的推到用户面前。
   actions:
     - theme: brand
       text: 开始阅读
       link: /guide/roadmap
     - theme: alt
-      text: 查看 AbandonedIdeas
-      link: https://ideas.swep.top/
+      text: 免费加入流量联盟
+      link: https://ally.swep.top/
 
 features:
   - title: 先找真问题
@@ -20,15 +20,17 @@ features:
     details: 第一版只验证一条核心路径，别急着把它做成平台。
   - title: 先拿到反馈
     details: 点赞和收藏不是用户。愿意试用、提问题、给样本的人才更接近真实需求。
+  - title: 先加入互推
+    details: 这本书也接入了流量联盟。右下角蓝色按钮就是展示效果，适合早期产品互相获得一点真实访问。
 ---
 
 ## 为什么写这本书
 
 这本书不是从一个完整大纲开始的。
 
-它更像是我在做独立开发、推广项目、整理 AbandonedIdeas 的过程中，一边遇到问题，一边把答案记下来。
+它更像是我在做独立开发、推广项目、整理失败案例的过程中，一边遇到问题，一边把答案记下来。
 
-比如我一开始以为，别人看到“遗缺点子回收站”之后，会顺手去 GitHub 提 Issue。后来发现不是这样。知乎上有人点赞、收藏，也有人关注，但让他们跳到 GitHub 填模板，这个动作太重了。
+比如我一开始以为，别人看到一个可以提交失败想法的入口之后，会顺手去 GitHub 提 Issue。后来发现不是这样。知乎上有人点赞、收藏，也有人关注，但让他们跳到 GitHub 填模板，这个动作太重了。
 
 这件事给我的提醒是：很多独立开发项目不是卡在代码，而是卡在“用户下一步到底要做什么”。
 
@@ -39,7 +41,12 @@ features:
 - 发帖有赞但没转化，问题可能在哪里？
 - 网站、小程序、App、海外上架分别有什么门槛？
 - 支付、定价、SEO、统计、评论和推广这些事，什么时候该做？
+- AI 和 vibe coding 能帮到哪里，又有哪些地方不能偷懒？
 - 项目撑不下去时，怎么判断是继续、缩小、转向还是放弃？
+
+这本书本身也是一个流量联盟示例站点。你看到右下角的蓝色「流量联盟」按钮，就是接入后的真实效果：它不会打断阅读，但可以把读者带到其他相关产品，也能让你的产品被相近人群看到。
+
+如果你已经有一个能打开的产品页，可以从右上角「免费加入流量联盟」提交产品并接入脚本。
 
 ## 这本书不是什么
 
@@ -56,20 +63,20 @@ features:
 3. [怎么定义产品](/guide/product-definition)
 4. [怎么做一个足够小的 MVP](/guide/mvp)
 5. [开发资源和技术选择](/guide/dev-resources)
-6. [怎么部署上线](/guide/deploy)
-7. [上架门槛总览](/guide/compliance)
-8. [数据统计和分析](/guide/analytics)
-9. [怎么接入支付](/guide/payment)
-10. [变现方式和定价](/guide/pricing)
-11. [SEO 基础](/guide/seo)
-12. [怎么获得第一批用户](/guide/marketing)
-13. [流量联盟使用指南](/guide/traffic-alliance)
-14. [什么时候应该放弃](/guide/when-to-quit)
+6. [AI 和 vibe coding 怎么用](/guide/ai-vibe-coding)
+7. [怎么部署上线](/guide/deploy)
+8. [上线后一周行动清单](/guide/launch-week)
+9. [上架门槛总览](/guide/compliance)
+10. [数据统计和分析](/guide/analytics)
+11. [怎么接入支付](/guide/payment)
+12. [变现方式和定价](/guide/pricing)
+13. [SEO 基础](/guide/seo)
+14. [怎么获得第一批用户](/guide/marketing)
+15. [流量联盟](/guide/traffic-alliance)
+16. [什么时候应该放弃](/guide/when-to-quit)
 
-## 和 AbandonedIdeas 的关系
-
-[AbandonedIdeas](https://ideas.swep.top/) 是一个遗缺点子档案库，收录那些暂停、卡住、增长停滞或等待别人接手的软件项目。
+## 为什么看失败项目
 
 我越来越觉得，失败项目很值得看。成功故事经常被包装得很顺，失败项目反而更诚实：哪里找不到用户，哪里转化太重，哪里维护成本扛不住，哪里只是“有人觉得有趣”但没人真正需要。
 
-这本手册会把 AbandonedIdeas 当成案例来源之一。不是为了围观别人失败，而是为了少重复踩同样的坑。
+所以这本手册会保留失败项目复盘这条线。不是为了围观别人失败，而是为了少重复踩同样的坑。

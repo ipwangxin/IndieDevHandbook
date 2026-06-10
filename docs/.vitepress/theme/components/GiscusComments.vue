@@ -72,7 +72,26 @@ watch(isDark, updateTheme)
 
 <template>
   <section v-if="shouldShow" class="giscus-section">
-    <h2 class="giscus-title">评论</h2>
+    <h2 class="giscus-title">项目和想法收集区</h2>
+    <div class="giscus-guide">
+      <p>
+        欢迎留下你已经上线的站点、正在验证的想法、推广卡点，或者已经暂停/放弃的项目。后续我会定期整理有代表性的案例，用在 AbandonedIdeas、流量联盟和后续文章里。
+      </p>
+      <ul>
+        <li>已上线：链接 + 一句话介绍 + 当前最想验证的问题。</li>
+        <li>卡住了：哪里没流量、没转化、没人付费，或者维护成本太高。</li>
+        <li>已放弃：为什么停下，踩过什么坑，希望别人接手还是只想复盘。</li>
+      </ul>
+      <details class="giscus-template">
+        <summary>可以直接复制这个格式</summary>
+        <pre><code>项目 / 想法：
+链接：
+当前状态：已上线 / 开发中 / 暂停 / 已放弃
+一句话介绍：
+现在最卡的地方：
+希望大家帮我看：</code></pre>
+      </details>
+    </div>
     <p v-if="!enabled" class="giscus-placeholder">
       评论区尚未启用。配置 Giscus 仓库信息后，这里会显示 GitHub Discussions 评论。
     </p>

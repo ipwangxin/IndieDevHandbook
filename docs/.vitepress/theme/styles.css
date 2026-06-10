@@ -10,6 +10,51 @@
   line-height: 1.4;
 }
 
+.giscus-guide {
+  margin: 0 0 20px;
+  padding: 16px 18px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.giscus-guide p {
+  margin: 0 0 10px;
+}
+
+.giscus-guide ul {
+  margin: 0 0 12px;
+  padding-left: 20px;
+}
+
+.giscus-guide li + li {
+  margin-top: 4px;
+}
+
+.giscus-template {
+  margin-top: 8px;
+}
+
+.giscus-template summary {
+  cursor: pointer;
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+}
+
+.giscus-template pre {
+  margin: 12px 0 0;
+  padding: 12px;
+  overflow-x: auto;
+  border-radius: 6px;
+  background: var(--vp-code-block-bg);
+  color: var(--vp-code-block-color);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
 .giscus-placeholder {
   margin: 0;
   color: var(--vp-c-text-2);

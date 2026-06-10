@@ -1,8 +1,34 @@
+import { dirname, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
+
+const configDir = dirname(fileURLToPath(import.meta.url))
+
 export default {
   title: '国内独立开发冷启动手册',
   description: '一本写给国内独立开发者的免费实践手册',
   lang: 'zh-CN',
   cleanUrls: true,
+
+  head: [
+    [
+      'script',
+      {
+        async: '',
+        src: 'https://api.swep.top/verify.js',
+        'data-ai-data-alliance-token': 'ada_d6772f098d0c2184ca2d6ea1e886873ba2ab',
+        'data-product-id': '16a0743a-d773-48e1-b346-c332b10a7eac',
+        'data-lang': 'auto',
+        'data-lang-storage-key': 'ada_locale',
+        'data-label-zh': '流量联盟',
+        'data-label-en': 'Traffic Alliance',
+        'data-placement': 'floating'
+      }
+    ]
+  ],
+
+  vite: {
+    envDir: resolve(configDir, '../..')
+  },
 
   themeConfig: {
     logo: '/logo.svg',
@@ -10,7 +36,8 @@ export default {
     nav: [
       { text: '开始阅读', link: '/guide/idea' },
       { text: '工具清单', link: '/resources/tools' },
-      { text: 'AbandonedIdeas', link: 'https://ideas.swep.top/' }
+      { text: '开源项目', link: 'https://github.com/ipwangxin/IndieDevHandbook' },
+      { text: '免费加入流量联盟', link: 'https://ally.swep.top/' }
     ],
 
     sidebar: [
@@ -28,7 +55,9 @@ export default {
         text: '开发和上线',
         items: [
           { text: '开发资源和技术选择', link: '/guide/dev-resources' },
+          { text: 'AI 和 vibe coding 怎么用', link: '/guide/ai-vibe-coding' },
           { text: '怎么部署上线', link: '/guide/deploy' },
+          { text: '上线后一周行动清单', link: '/guide/launch-week' },
           { text: '上架门槛总览', link: '/guide/compliance' },
           { text: '国内上线合规', link: '/guide/domestic-compliance' },
           { text: '海外上架合规', link: '/guide/global-compliance' },
@@ -49,7 +78,7 @@ export default {
         text: '推广冷启动',
         items: [
           { text: '怎么获得第一批用户', link: '/guide/marketing' },
-          { text: '流量联盟使用指南', link: '/guide/traffic-alliance' },
+          { text: '流量联盟', link: '/guide/traffic-alliance' },
           { text: '什么时候应该放弃', link: '/guide/when-to-quit' },
           { text: '失败项目复盘', link: '/guide/abandoned-ideas' }
         ]
@@ -58,8 +87,7 @@ export default {
         text: '附录',
         items: [
           { text: '工具清单', link: '/resources/tools' },
-          { text: '检查清单', link: '/resources/checklist' },
-          { text: '评论系统配置', link: '/guide/comments' }
+          { text: '检查清单', link: '/resources/checklist' }
         ]
       }
     ],
