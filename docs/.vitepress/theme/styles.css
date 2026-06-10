@@ -1,0 +1,17 @@
+.giscus-section {
+  margin-top: 48px;
+  padding-top: 28px;
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+.giscus-title {
+  margin: 0 0 12px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.giscus-placeholder {
+  margin: 0;
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+}
